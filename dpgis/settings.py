@@ -126,3 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LEAFLET_CONFIG = {
+    'DEFAULT_CENTER' : (33.33, 44.44),
+    'DEFAULT_ZOOM' : 5,
+}

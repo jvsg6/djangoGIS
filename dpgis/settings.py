@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
+    'leaflet',
     'reporter'
 ]
 
@@ -78,8 +79,8 @@ WSGI_APPLICATION = 'dpgis.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'mydb',
-        'USER': 'myuser',
+        'NAME': 'mydb5',
+        'USER': 'myuser5',
         'PASSWORD' : '1234',
         'HOST' : 'localhost',
         'PORT' : '5432',

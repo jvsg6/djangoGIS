@@ -1,4 +1,8 @@
 from django.contrib import admin
 from .models import Accident
+from leaflet.admin import LeafletGeoAdmin
 # Register your models here.
-admin.site.register(Accident)
+class AccidentAdmin(LeafletGeoAdmin):
+	list_display = ('name', 'location')
+
+admin.site.register(Accident, AccidentAdmin)
